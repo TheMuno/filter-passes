@@ -36,6 +36,14 @@ async function retrievePasses() {
     const { passes } = data;
 
     console.log(`passes:`, passes)
+
+    goCityArr2 = passes.filter(pass => !!pass.gocity);
+    sightseeingArr2 = passes.filter(pass => !!pass.sightseeing);
+    cityPassArr2 = passes.filter(pass => !!pass.citypass);
+
+    console.log('goCityArr2', goCityArr2)
+    console.log('sightseeingArr2', sightseeingArr2)
+    console.log('cityPassArr2', cityPassArr2)
 }
 
 retrievePasses(); 
