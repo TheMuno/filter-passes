@@ -29,9 +29,14 @@
     margin-right: 5px;
 }
 
+.divider {
+    border: 1px solid;
+    margin-top: 50px;
+}
+
 .results {
     font-size: 0.8rem; 
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .results .passer {
