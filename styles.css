@@ -1,93 +1,97 @@
 .section {
-            width: 80%;
-            margin: auto;
-            /* outline: 1px dotted red; */
-        }
+    width: 80%;
+    margin: auto;
+    /* outline: 1px dotted red; */
+}
 
-        .title {
-            text-align: center;
-            margin: 40px;
-            font-size: 2rem;
-        }
+.title {
+    text-align: center;
+    margin: 40px;
+    font-size: 2rem;
+}
 
-        .passes {
-            display: flex;
-            justify-content: center;
-            font-size: 1rem;
-        }
+.passes {
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+}
 
-        .passes-sec {
-            margin: 0 30px;
-        }
+.passes-sec {
+    margin: 0 30px;
+}
 
-        .pass {
-            display: flex;
-            align-items: center;
-        }
+.pass {
+    display: flex;
+    align-items: center;
+}
 
-        .results {
-            font-size: 0.8rem; 
-            margin-top: 20px;
-        }
+.pass-check {
+    margin-right: 5px;
+}
 
-        .results .passer {
-            display: flex;
-            align-items: center;
-            margin: 10px 0;
-        }
+.results {
+    font-size: 0.8rem; 
+    margin-top: 20px;
+}
 
-        .result-passes {
-            display: flex;
-            align-items: center;
-            margin-left: 10px;
-        }
+.results .passer {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
 
-        .result-pass {
-            /* margin: 0 5px; */
-            /* border: 3px solid; */
-            padding: 5px;
-        }
+.result-passes {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
 
-        .result-pass.hide {
-            display: none;
-        }
+.result-pass {
+    /* margin: 0 5px; */
+    /* border: 3px solid; */
+    padding: 5px;
+}
 
-        .name {
-            font-weight: bold;
-            font-size: 1.1rem;
-            padding: 2px 4px;
-            border-radius: 1px;
-        }
+.result-pass.hide {
+    display: none;
+}
 
-        .name.active {
-            background-color: rgb(186 195 180);
-        }
+.name {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 2px 4px;
+    border-radius: 1px;
+}
 
-        .name.inactive {
-            background-color: initial;
-        }
+.name.active {
+    background-color: rgb(186 195 180);
+}
 
-        span.ex:before {
-            content: '\03C7';
-            display: inline-block;
-            color: red;
-            padding: 0 5px 0 0;
-        }
+.name.inactive {
+    background-color: initial;
+}
 
-        span.tick:before {
-            content: '\2713'; 
-            display: inline-block;
-            color: green;
-        }
+span.ex:before {
+    content: '\03C7';
+    display: inline-block;
+    color: red;
+    padding: 0 5px 0 0;
+}
 
-        span.tick, 
-        span.ex {
-            list-style-type: none;
-            font-size: 1em;
-            margin-left: 5px;
-        }
+span.tick:before {
+    content: '\2713'; 
+    display: inline-block;
+    color: green;
+}
 
-        span.tick.hide, 
-        span.ex.hide {
-            display: none;
-        }
+span.tick, 
+span.ex {
+    list-style-type: none;
+    font-size: 1em;
+    margin-left: 5px;
+}
+
+span.tick.hide, 
+span.ex.hide {
+    display: none;
+}
