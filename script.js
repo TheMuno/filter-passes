@@ -24,8 +24,8 @@ let goCityArr2 = [],
 sightseeingArr2 = [], 
 cityPassArr2 = [];
 
-async function retrievePasses(passer) {
-    const docRef = doc(db, 'passes', passer);
+async function retrievePasses() {
+    const docRef = doc(db, 'passes', 'nyc');
     const docSnap = await getDoc(docRef);
     if (!docSnap.exists()) {
         console.log(`Passer ${passer} doesn't exist!`);
@@ -38,7 +38,7 @@ async function retrievePasses(passer) {
     console.log(`${passer} passes:`, passes)
 }
 
-retrievePasses('gocity'); 
+retrievePasses(); 
 
 const goCityArr = [
     'the edge', 
