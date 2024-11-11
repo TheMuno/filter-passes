@@ -35,7 +35,7 @@ async function retrievePasses() {
     const data = docSnap.data();
     const { passes } = data;
 
-    console.log(`${passer} passes:`, passes)
+    console.log(`passes:`, passes)
 }
 
 retrievePasses(); 
