@@ -153,6 +153,10 @@ function countAllTicks() {
     console.log('sightseeingTicks', sightseeingTicks)
     console.log('cityPassTicks', cityPassTicks)
 
+    console.log('$goCityPassCount', $goCityPassCount)
+    console.log('$sightseeingPassCount', $sightseeingPassCount)
+    console.log('$cityPassCount', $cityPassCount)
+
     $goCityPassCount.textContent = goCityTicks;
     $sightseeingPassCount.textContent = sightseeingTicks;
     $cityPassCount.textContent = cityPassTicks;
