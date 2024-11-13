@@ -107,12 +107,12 @@ const $goCityPassCount = $goCity.querySelector('.pass-count');
 const $sightseeing = document.querySelector('[data-pass="sightseeing"]');
 const $sightseeingName = $sightseeing.querySelector('.name');
 const $sightseeingResultPasses = $sightseeing.querySelector('.result-passes');
-const $sightseeingPassCount = $goCity.querySelector('.pass-count');
+const $sightseeingPassCount = $sightseeing.querySelector('.pass-count');
 
 const $cityPass = document.querySelector('[data-pass="city-pass"]');
 const $cityPassName = $cityPass.querySelector('.name');
 const $cityPassResultPasses = $cityPass.querySelector('.result-passes');
-const $cityPassCount = $goCity.querySelector('.pass-count');
+const $cityPassCount = $cityPass.querySelector('.pass-count');
 
 const $samplePass = $goCity.querySelector('.result-pass');
 
