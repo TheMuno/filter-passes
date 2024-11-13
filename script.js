@@ -102,14 +102,17 @@ const cityPassArr = [
 const $goCity = document.querySelector('[data-pass="go-city"]');
 const $goCItyName = $goCity.querySelector('.name');
 const $gocityResultPasses = $goCity.querySelector('.result-passes');
+const $goCityPassCount = $goCity.querySelector('.pass-count');
 
 const $sightseeing = document.querySelector('[data-pass="sightseeing"]');
 const $sightseeingName = $sightseeing.querySelector('.name');
 const $sightseeingResultPasses = $sightseeing.querySelector('.result-passes');
+const $sightseeingPassCount = $goCity.querySelector('.pass-count');
 
 const $cityPass = document.querySelector('[data-pass="city-pass"]');
 const $cityPassName = $cityPass.querySelector('.name');
 const $cityPassResultPasses = $cityPass.querySelector('.result-passes');
+const $cityPassCount = $goCity.querySelector('.pass-count');
 
 const $samplePass = $goCity.querySelector('.result-pass');
 
@@ -137,6 +140,18 @@ function handlePassesClick($pass) {
     $checkbox.checked ? addAllPassesToRelevantSections(label) : removePassFromSection(label);
 
     activateDeactivateAllPasses(); 
+
+    countAllTicks();
+}
+
+function countAllTicks() {
+    const goCityTicks = $gocityResultPasses.querySelectorAll('.result-pass:not(.hide) .tick:not(.hide)').length;
+    const sightseeingTicks = $sightseeingResultPasses.querySelectorAll('.result-pass:not(.hide) .tick:not(.hide)').length;
+    const cityPassTicks = $cityPassResultPasses.querySelectorAll('.result-pass:not(.hide) .tick:not(.hide)').length;
+
+    $goCityPassCount.textContent = goCityTicks;
+    $sightseeingPassCount.textContent = sightseeingTicks;
+    $cityPassCount.textContent = cityPassTicks;
 }
 
 function addAllPassesToRelevantSections(label) {
