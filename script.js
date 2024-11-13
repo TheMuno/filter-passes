@@ -149,6 +149,10 @@ function countAllTicks() {
     const sightseeingTicks = $sightseeingResultPasses.querySelectorAll('.result-pass:not(.hide) .tick:not(.hide)').length;
     const cityPassTicks = $cityPassResultPasses.querySelectorAll('.result-pass:not(.hide) .tick:not(.hide)').length;
 
+    console.log('goCityTicks', goCityTicks)
+    console.log('sightseeingTicks', sightseeingTicks)
+    console.log('cityPassTicks', cityPassTicks)
+
     $goCityPassCount.textContent = goCityTicks;
     $sightseeingPassCount.textContent = sightseeingTicks;
     $cityPassCount.textContent = cityPassTicks;
